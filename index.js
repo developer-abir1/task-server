@@ -7,8 +7,7 @@ require('dotenv').config();
 
 app.use(express.json());
 app.use(cors());
-// NQ1nGh0YUiRiRYeb
-// userDBinfo
+
 const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.myfzpsp.mongodb.net/?retryWrites=true&w=majority`;
 const client = new MongoClient(uri, {
   useNewUrlParser: true,
